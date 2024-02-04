@@ -1,0 +1,149 @@
+
+// general style 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans';
+}
+
+// essential style 
+
+nav.navbar-expand{
+    background-color:rgb(225, 225, 225);
+}
+.navbar-brand{
+    font-family: 'Nunito Sans';
+    font-weight: 800;   
+    font-size: 24px;
+    line-height: 32,74px;
+}
+.dark-title{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.card-title{
+    line-height: 26px;
+    font-weight: 800;
+    font-size: 18px;
+    padding-bottom: 16px;
+}
+.card-title-detail{
+    line-height: 26px;
+    font-weight: 800;
+    font-size: 32px;
+    padding-bottom: 16px;
+}
+.about-flag{
+    margin-top: 80px;
+}
+.country-card{
+    border: none;
+}
+.country-neighbour{
+    box-shadow: 2px 2px 4px rgb(127, 126, 126);
+    padding: 2px 3px;
+    
+}
+.about-this-country{
+    line-height: 16px;
+}
+
+// DARK MODE 
+.dark-mode{
+
+    #search{
+        color:white;
+    }
+
+    background-color:#202C36;
+    & .container-fluid .navbar-expand {
+        background-color:#2B3844;
+    }
+    & .container-fluid .navbar-brand {
+        background-color:#2B3844;
+        color:white;
+    }
+    & .container-fluid #dark-button {
+        background-color:#2B3844;
+        color: white;
+    }
+    & .container-fluid input#search {
+        background-color:#2B3844;
+        &.value{
+            color: white;
+        }
+    }
+    & .container-fluid .card {
+        background-color:#2B3844;
+        color:white;
+    }
+    & .container-fluid .dropdown button {
+        background-color:#2B3844;
+        color:white;
+        & ~ ul{
+            background-color:#2B3844;
+            & .dropdown-item{
+                color:white;
+            }
+            & .dropdown-item:hover{
+                color:rgb(30, 27, 27);
+            }
+        }
+    }
+    input::placeholder{
+        color:white;
+    }
+}
+
+//LOADER
+.pre{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 99999;
+    background-color:white;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+}
+.loader{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border:20px solid transparent;
+    border-right:20px solid #202C36;
+    border-left:20px solid #202C36;
+    animation: a1 1s infinite linear;
+}
+@keyframes a1{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.load .pre{
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    transform: scale(0.8);
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1202px) {
+    .container-fluid.about-flag-country{
+        display: none;
+    }
+}
