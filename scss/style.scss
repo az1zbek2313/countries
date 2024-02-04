@@ -147,3 +147,16 @@ nav.navbar-expand{
         display: none;
     }
 }
+@media screen and (max-width:768px) {
+    nav.navbar .container-fluid .navbar-brand{
+        display: none;
+    }
+    #basic-addon1{
+        display: none;
+    }
+    div#country-card{
+        width: 300px;
+        display: flex;
+        transform: scale(1.4, 1);
+    }
+}

@@ -138,4 +138,17 @@ nav.navbar-expand {
   .container-fluid.about-flag-country {
     display: none;
   }
+}
+@media screen and (max-width: 768px) {
+  nav.navbar .container-fluid .navbar-brand {
+    display: none;
+  }
+  #basic-addon1 {
+    display: none;
+  }
+  div#country-card {
+    width: 300px;
+    display: flex;
+    transform: scale(1.4, 1);
+  }
 }/*# sourceMappingURL=style.css.map */
