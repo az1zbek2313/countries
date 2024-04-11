@@ -52,6 +52,10 @@ nav.navbar-expand {
   line-height: 16px;
 }
 
+#href {
+  text-decoration: none;
+}
+
 .dark-mode {
   background-color: #202C36;
 }

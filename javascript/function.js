@@ -1,6 +1,6 @@
 function createCard(country) {
     return `
-    <a class="mx-auto" href="../pages/detail.html?id=${country.name.slug}">
+    <a id=""href" class="mx-auto" href="../pages/detail.html?id=${country.name.slug}">
         <div id="card" class="card my-3" style="width: 18rem; cursor:pointer;">
         <img src="${country.flags.png}" class="card-img-top" alt="flag image">
         <div class="card-body">
